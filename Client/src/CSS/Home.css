@@ -1,0 +1,40 @@
+.my-slide {
+    animation-name: slider;
+    animation-duration: 0.5s;
+    transition: 0.5 s ease-in-out;
+    border-right: 1px solid black;
+    z-index: 2;
+    width: 50%;
+    display: block;
+}
+
+.my-slide-reverse {
+    animation-name: slider-reverse;
+    animation-duration: 0.5s;
+    transition: 0.5 s ease-in-out;
+    width: 0;
+}
+
+@keyframes slider {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        width: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes slider-reverse {
+    0% {
+        width: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0;
+        opacity: 0;
+    }
+}
